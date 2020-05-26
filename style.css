@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{	margin:0px;
+	padding:0px;
+}
+@import url("barcelona/stylesheet.css");
+body{ background-color:#fdb8b6;
+		font-family:geosansLight;		
+		color: #9b8884;
+		padding:3em;
+		padding-left:5em;	
+			
+		}
+		.titulo{
+			background-color: #fdb8b6;
+			font-family: barcelona;
+			color: #9b8884;
+			font-zize: xxx-large;
+			text-align: center;
+			font-size: xxx-large;
+		}
+		
+		.center-h {
+  		justify-content: center;
+	  	}
+		.center-p {
+  		justify-content: space-evenly;
+	  	}
+		.center-v {
+  		align-items: center;
+	  	}
+		.contenedor{
+			font-family:geosansLight;
+			font-size:medium;
+    		position: relative;
+    		display: inline-block;
+    		text-align: center;
+			margin-left:1em;
+		}
+		.texto-encima{
+    		position: absolute;
+    		top: 10px;
+    		left: 10px;
+		}
+		.centrado{
+	position: absolute;
+	top: 40px;
+	left: 151px;
+	transform: translate(-50%, -50%);
+		}
+		
+		.child {
+  			padding: .2rem;
+		}
+
+}

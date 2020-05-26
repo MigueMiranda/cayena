@@ -1,0 +1,183 @@
+/* 
+		Slider CSS
+    Created on : 23-abr-2014, 18:28:01
+    Author     : Rolando Caldas <rolando.caldas@gmail.com>
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color:#fdb8b6;
+	font-family:barcelona;
+	color: #9b8884;
+	font-size:xxx-large;
+    text-align:center;
+}
+
+input[name="slider-select-element"] {
+    display: none;
+}
+
+#slider-arrows {
+    margin: -15% auto 0 auto;
+    width: 80%;
+}
+
+#slider-box {
+    height: 100%;
+    width: 300%;
+}
+
+#slider-container {
+    height: 20%;
+	marker-offset:auto;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 80%;
+}
+
+.element-img1,
+.element-img2,
+.element-img3,
+.element-img4,
+.element-img5,
+.element-img6,
+.element-img7,
+.element-img8 {
+    min-height: 400px;
+    max-height: 100%;
+    width: 100%;
+}
+
+.element-img1 {
+	background-image:url(images/nv1.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+
+.element-img2 {
+    background-image:url(images/nv2.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+
+.element-img3 {
+    background-image:url(images/nv3.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+
+.element-img4 {
+    background-image:url(images/nv4.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+
+.element-img5 {
+    background-image:url(images/nv5.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+
+.element-img6 {
+    background-image:url(images/nv6.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+
+.element-img7 {
+    background-image:url(images/nv7.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+
+.element-img8 {
+    background-image:url(images/nv8.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+
+.slider-element {
+    float: left;
+    width: 12.5%;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2),
+#element2:checked ~ #slider-arrows label:nth-child(3),
+#element3:checked ~ #slider-arrows label:nth-child(1) {
+    display: block;
+    float: right;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(3),
+#element2:checked ~ #slider-arrows label:nth-child(1),
+#element3:checked ~ #slider-arrows label:nth-child(2) {
+    display: block;
+    float: left;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2):before,
+#element2:checked ~ #slider-arrows label:nth-child(3):before,
+#element3:checked ~ #slider-arrows label:nth-child(1):before {
+    color: #9b8884;
+    content: "\f054";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(3):before,
+#element2:checked ~ #slider-arrows label:nth-child(1):before,
+#element3:checked ~ #slider-arrows label:nth-child(2):before {
+    color: #9b8884;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-container #slider-box {
+    margin-left: 0;
+}
+
+#element2:checked ~ #slider-container #slider-box {
+    margin-left: -100%;
+}
+
+#element3:checked ~ #slider-container #slider-box {
+    margin-left: -200%;
+}
+
+#slider-arrows label {
+    color: transparent;
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    height: 20px;
+    width: 20px;
+}
+
+#slider-box {
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
